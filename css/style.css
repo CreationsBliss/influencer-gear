@@ -5,9 +5,14 @@
 }
 :root{
   --primary-color: #3A3A3A;
+  --secondary-color: #18191F;
+  --collection-color: #787885;
+  --collection__more__text-color: rgba(224, 44, 109, 0.87);
   --btn-text-color: #ffffff;
   --btn-bg: linear-gradient(to right, #E02C6D, #b83867);
   --btn-hover-bg: linear-gradient(to right, #b83867, #E02C6D);
+  --footer-bg: #0A0826;
+  --footer-text-color: #ffffff;
 }
 
 /*------------
@@ -126,5 +131,83 @@
     box-shadow: 0 0 1px black;
   }
   /* sponsor section ends */
-  
-  
+  .collection{
+    padding-top: 100px;
+  }
+  .collection__title{
+    color: var(--primary-color);
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .collection__items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+  }
+  .collection__item{
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  .collection__item:hover{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  }
+  .collection__image{
+    width: 100%;
+  }
+  .collection__subtitlle{
+    color: var(--secondary-color);
+    font-size: 18px;
+    padding: 10px 0px;
+  }
+  .collection__price{
+    color: var(--primary-color);
+    font-size: 20px;
+  }
+  .collection__ratings {
+    color: orange;
+    padding: 10px 0px;
+  }
+  .collection__rating{
+    padding-left: 10px;
+    color: var(--collection-color);
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .collection__text{
+    color: var(--collection-color);font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .collection__more__text{
+    color: var(--collection__more__text-color);
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: right;
+  }
+  .collection__arrow{
+    padding-left: 10px;
+  }
+  /* collection section ends */
+
+  .site__footer{
+    width: 100%;
+    padding: 30px 0px;
+    background: var(--footer-bg);
+    text-align: center;
+    color: var(--footer-text-color);
+  }
+  .footer__title{
+    font-size: 18px;
+  }
+  .footer__text, .footer__copytext{
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .footer__text{
+    padding: 5px 0px 3px;
+  }
+  .footer__copytext{
+    padding: 2px 0px 5px;
+  }
