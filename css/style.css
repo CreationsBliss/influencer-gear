@@ -13,6 +13,7 @@
   --btn-hover-bg: linear-gradient(to right, #b83867, #E02C6D);
   --footer-bg: #0A0826;
   --footer-text-color: #ffffff;
+  --footer-icon-color: #373456c7;
 }
 
 /*------------
@@ -130,6 +131,7 @@
     border-radius: 125px/12px;
     box-shadow: 0 0 1px black;
   }
+  
   /* sponsor section ends */
   .collection{
     padding-top: 100px;
@@ -211,3 +213,22 @@
   .footer__copytext{
     padding: 2px 0px 5px;
   }
+  .footer__social{
+    display: flex;
+    justify-content: center;
+  }
+  .footer__link{
+    background: var(--footer-icon-color);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 5px 5px;
+  }
+  .footer__social__icon{
+    color: var(--footer-text-color);
+    font-size: 15px;
+  }
+  /* footer section ends */
