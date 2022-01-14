@@ -63,7 +63,7 @@
     font-weight: 700;
     border-radius: 40px;
     text-decoration: none;
-    padding: 10px 20px; 
+    padding: 10px 30px;
     display: inline-block;
     margin-top: 20px;
   }
@@ -76,22 +76,13 @@
   .banner__right{
     flex-basis: 45%;
     text-align: center;
-    position: relative;
   }
   .banner__img1{
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transition: transform 0.3s;
   }
-  .banner__img2{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+  .banner__img1:hover{
+    transform: rotate(130deg) scale(1.1);
   }
 
   /*----------
@@ -284,6 +275,10 @@
     align-items: center;
     border-radius: 50%;
     margin: 5px 5px;
+    transition: transform 0.3s;
+  }
+  .footer__link:hover{
+    transform: rotate(360deg);
   }
   .footer__social__icon{
     color: var(--footer-text-color);
