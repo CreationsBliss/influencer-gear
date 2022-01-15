@@ -9,8 +9,10 @@
   --collection-color: #787885;
   --collection__more__text-color: rgba(224, 44, 109, 0.87);
   --btn-text-color: #ffffff;
+  --navitem-color: #E02C6D;
   --btn-bg: linear-gradient(to right, #E02C6D, #b83867);
   --btn-hover-bg: linear-gradient(to right, #b83867, #E02C6D);
+  --nav-bg: #f5f5f5;
   --form-bg: #f5f5f5;
   --footer-bg: #0A0826;
   --footer-text-color: #ffffff;
@@ -32,6 +34,9 @@
  /*----------
   Header styles 
   ------------*/
+  .banner_navMobile{
+    display: none;
+  }
   .banner__nav{
     display: flex;
     justify-content: space-between;
@@ -56,9 +61,11 @@
     color: var(--primary-color);
     font-size: 16px;
     font-weight: 400;
+    padding: 10px 0px;
   }
-
-
+  .banner__item  li a:hover {
+    color: var(--navitem-color);
+  }
   .banner__content{
     height: calc(100vh - 80px);
   }
@@ -105,8 +112,9 @@
     text-align: center;
   }
   .banner__img1{
-    width: 100%;
+    width: 90%;
     transition: transform 0.3s;
+    cursor: pointer;
   }
   .banner__img1:hover{
     transform: rotate(130deg) scale(1.1);
@@ -141,13 +149,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0px 10% 20px;
-    /* display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    justify-content: center;
-    grid-gap: 20px; */
   }
   .sponsor__image{
     flex-basis: 10%;
+    cursor: pointer;
   }
   .sponsor__divider .sponsor--shadow1 {
     overflow: hidden;
