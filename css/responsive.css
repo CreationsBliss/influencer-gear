@@ -79,6 +79,10 @@
   .banner__navigation ul{
     display: block;
   }
+  .banner__cart a{
+    color: var(--primary-color);
+    text-decoration: none;
+  }
   .banner__nav{
     display: none;
   }
