@@ -32,8 +32,35 @@
  /*----------
   Header styles 
   ------------*/
+  .banner__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+  .banner__logo{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 800;
+  }
+  .banner__item ul{
+    display: flex;
+  }
+  .banner__item ul li{
+    list-style: none;
+    padding: 0px 15px;
+  }
+  .banner__item ul li a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+
   .banner__content{
-    height: 100vh;
+    height: calc(100vh - 80px);
   }
   .banner__content{
     display: flex;
