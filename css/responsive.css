@@ -79,7 +79,7 @@
   .banner__navigation ul{
     display: block;
   }
-  .banner__cart a{
+  .banner__cartlink{
     color: var(--primary-color);
     text-decoration: none;
   }
