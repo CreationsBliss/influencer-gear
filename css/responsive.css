@@ -17,7 +17,7 @@
   }
   .sponsor__image {
     flex-basis: 15%;
-    margin: 0px 20px 10px;
+    margin: 0px 25px 10px;
   }
   .newsletter {
     text-align: center;
@@ -29,8 +29,59 @@
  Tablet views 
  ------------*/
 
-@media (max-width:767px) {
+ @media (max-width:767px){
+
+  .banner__content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner__right{
+    order: 1;
+  }
+  .banner__left {
+    order: 2;
+  }
+  .banner__img1 {
+    width: 60%;
+  }
+  .sponsor__image {
+    flex-basis: 10%;
+    margin: 0px 10px 10px;
+  }
+
+ }
+ /*----------
+ Landscape mobile views 
+ ------------*/
+
+@media (max-width:576px) {
   
+  .banner__content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner__right{
+    order: 1;
+  }
+  .banner__left {
+    order: 2;
+  }
+  .banner__title {
+    font-size: 33px;
+  } 
+  .banner__img1 {
+    width: 60%;
+  }
+  .sponsor__image {
+    flex-basis: 3%;
+    margin: 0px 8px 10px;
+    max-width: 45px;
+  }
+  .collection__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+
 }
 /*----------
  Mobile views 
